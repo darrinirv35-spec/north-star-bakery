@@ -34,3 +34,4 @@ Add those supplied media files to the repository's root folder before publishing
 
 ## Important
 The address, hours, and other business details in the HTML are sample values because the client brief did not provide official contact details. Replace them if your instructor/client provides official information.
+North Star Bakery website project.
