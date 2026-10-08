@@ -6,15 +6,16 @@
   <meta name="description" content="Explore breads, pastries, and cakes from North Star Bakery.">
   <title>North Star Bakery | Products</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
   <div class="header-inner">
-    <img class="logo" src="bakery-logo.png" alt="North Star Bakery logo">
+    <img class="logo" src="bakery-logo_c.png" alt="North Star Bakery logo">
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -26,16 +27,25 @@
   <h1>Our Products</h1>
   <p>Browse a selection of breads, pastries, and cakes. Prices are ranges because final pricing can vary by size and customization.</p>
 
+  <section class="favorite-panel" aria-live="polite">
+    <h2>Your Bakery Favorite</h2>
+    <p id="favorite-message" class="favorite-message">Choose a bakery item to save as your favorite.</p>
+    <p id="favorite-count" class="favorite-count">No favorite saved yet</p>
+    <p class="small-note">Your favorite is remembered on this browser so you can return to it later.</p>
+  </section>
+
   <section>
     <h2>Breads</h2>
     <div class="card-grid">
       <article class="card">
         <h3>Signature Loaf</h3><p class="price">$6–$9</p>
         <p>A rustic artisan loaf with a crisp crust and tender center.</p>
+        <button class="favorite-button" type="button" data-product-id="signature-loaf" aria-pressed="false">☆ Save as favorite</button>
       </article>
       <article class="card">
         <h3>Country Sourdough</h3><p class="price">$7–$10</p>
         <p>A naturally fermented loaf with a flavorful, slightly tangy crumb.</p>
+        <button class="favorite-button" type="button" data-product-id="country-sourdough" aria-pressed="false">☆ Save as favorite</button>
       </article>
     </div>
   </section>
@@ -46,10 +56,12 @@
       <article class="card">
         <h3>Butter Croissant</h3><p class="price">$3–$5</p>
         <p>Light, flaky layers made with rich butter.</p>
+        <button class="favorite-button" type="button" data-product-id="butter-croissant" aria-pressed="false">☆ Save as favorite</button>
       </article>
       <article class="card">
         <h3>Seasonal Danish</h3><p class="price">$4–$6</p>
         <p>A rotating pastry featuring seasonal fruit and bakery-made fillings.</p>
+        <button class="favorite-button" type="button" data-product-id="seasonal-danish" aria-pressed="false">☆ Save as favorite</button>
       </article>
     </div>
   </section>
@@ -60,10 +72,12 @@
       <article class="card">
         <h3>Celebration Cake</h3><p class="price">$35–$65</p>
         <p>Customizable cakes for birthdays, gatherings, and special occasions.</p>
+        <button class="favorite-button" type="button" data-product-id="celebration-cake" aria-pressed="false">☆ Save as favorite</button>
       </article>
       <article class="card">
         <h3>Small Event Cake</h3><p class="price">$25–$45</p>
         <p>A smaller option for family celebrations and intimate events.</p>
+        <button class="favorite-button" type="button" data-product-id="event-cake" aria-pressed="false">☆ Save as favorite</button>
       </article>
     </div>
   </section>
